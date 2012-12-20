@@ -1,0 +1,126 @@
+object Form1: TForm1
+  Left = 469
+  Height = 212
+  Top = 168
+  Width = 329
+  BorderStyle = bsSingle
+  Caption = 'hct'
+  ClientHeight = 212
+  ClientWidth = 329
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.0.1.3'
+  object btnHide: TButton
+    Left = 240
+    Height = 24
+    Top = 88
+    Width = 80
+    Caption = 'Hide Window'
+    OnClick = btnHideClick
+    TabOrder = 0
+  end
+  object edtFolder: TEdit
+    Left = 56
+    Height = 23
+    Top = 2
+    Width = 268
+    TabOrder = 1
+    Text = 'path to folder'
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 16
+    Top = 9
+    Width = 44
+    Caption = 'copy to:'
+    ParentColor = False
+  end
+  object btnSelectFolder: TButton
+    Left = 220
+    Height = 25
+    Top = 32
+    Width = 104
+    Caption = 'Select'
+    OnClick = btnSelectFolderClick
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 116
+    Top = 88
+    Width = 227
+    ScrollBars = ssAutoVertical
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 240
+    Height = 23
+    Top = 112
+    Width = 82
+    Caption = 'drives[test]'
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object edtCopyFilter: TEdit
+    Left = 88
+    Height = 23
+    Top = 32
+    Width = 96
+    TabOrder = 5
+    Text = 'ТИ*'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 16
+    Top = 32
+    Width = 66
+    Caption = 'by this filter:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 16
+    Top = 60
+    Width = 78
+    Caption = 'if disk contain:'
+    ParentColor = False
+  end
+  object edtFind: TEdit
+    Left = 88
+    Height = 23
+    Top = 60
+    Width = 96
+    TabOrder = 6
+    Text = 'ТИ*'
+  end
+  object TrayIcon1: TTrayIcon
+    PopUpMenu = PopupMenu1
+    Visible = True
+    left = 32
+    top = 152
+  end
+  object PopupMenu1: TPopupMenu
+    left = 72
+    top = 152
+    object menuShow: TMenuItem
+      Caption = 'Show'
+      OnClick = menuShowClick
+    end
+    object menuExit: TMenuItem
+      Caption = 'Exit'
+      OnClick = menuExitClick
+    end
+  end
+  object dlgSelect: TSelectDirectoryDialog
+    left = 144
+    top = 152
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 60000
+    OnTimer = Timer1Timer
+    left = 112
+    top = 152
+  end
+end
