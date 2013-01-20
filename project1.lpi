@@ -18,7 +18,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MinorVersionNr Value="2"/>
-      <BuildNr Value="4"/>
+      <BuildNr Value="5"/>
       <StringTable InternalName="HiddenCopyTool" LegalCopyright="Str@y" OriginalFilename="hct.exe" ProductName="HiddenCopyTool" ProductVersion=""/>
     </VersionInfo>
     <BuildModes Count="1">
@@ -59,7 +59,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="hct.exe"/>
+      <Filename Value="Download\hct.exe"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
