@@ -9,7 +9,7 @@ object Form1: TForm1
   ClientWidth = 329
   OnCreate = FormCreate
   OnShow = FormShow
-  LCLVersion = '1.0.1.3'
+  LCLVersion = '1.1'
   object btnHide: TButton
     Left = 240
     Height = 24
@@ -29,17 +29,17 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 8
-    Height = 16
+    Height = 15
     Top = 9
-    Width = 44
+    Width = 43
     Caption = 'copy to:'
     ParentColor = False
   end
   object btnSelectFolder: TButton
-    Left = 220
+    Left = 252
     Height = 25
     Top = 32
-    Width = 104
+    Width = 72
     Caption = 'Select'
     OnClick = btnSelectFolderClick
     TabOrder = 2
@@ -66,23 +66,23 @@ object Form1: TForm1
     Left = 88
     Height = 23
     Top = 32
-    Width = 96
+    Width = 152
     TabOrder = 5
-    Text = 'ТИ*'
+    Text = 'if_finded_32*'
   end
   object Label2: TLabel
     Left = 8
-    Height = 16
+    Height = 15
     Top = 32
-    Width = 66
+    Width = 65
     Caption = 'by this filter:'
     ParentColor = False
   end
   object Label3: TLabel
     Left = 8
-    Height = 16
+    Height = 15
     Top = 60
-    Width = 78
+    Width = 77
     Caption = 'if disk contain:'
     ParentColor = False
   end
@@ -90,9 +90,9 @@ object Form1: TForm1
     Left = 88
     Height = 23
     Top = 60
-    Width = 96
+    Width = 152
     TabOrder = 6
-    Text = 'ТИ*'
+    Text = 'files_to_copy_1*0'
   end
   object TrayIcon1: TTrayIcon
     PopUpMenu = PopupMenu1
