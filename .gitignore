@@ -3,6 +3,7 @@ lib/
 backup/
 temp/
 *.exe
+Binary
 
 #################
 ## Eclipse
